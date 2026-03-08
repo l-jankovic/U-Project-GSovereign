@@ -1,0 +1,45 @@
+#  OS GENERATED 
+.DS_Store
+Thumbs.db
+
+# UNITY  DATA 
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+
+# LOCAL ASSET MANAGEMENT
+
+# 1. 
+/Assets/StoreAssets/**/*
+# 2. Keep meta
+!/Assets/StoreAssets/**/*.meta
+# 3. Zadrži strukturu foldera na Gitu
+!/Assets/StoreAssets/.gitkeep
+
+# IDE ARTIFACTS
+.vs/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+
+#  DEBUG & BINARIES
+*.pdb
+*.mdb
+*.apk
+*.unitypackage
+*.app
+sysinfo.txt
+
+#ASSET PIPELINE DATA 
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
