@@ -43,11 +43,16 @@ public class FighterStats : MonoBehaviour,IComparable
     {
         healthBarTransform = healthBar.GetComponent<RectTransform>();
         healthScale = healthBarTransform.localScale;
-        focusBarTransform = focusBar.GetComponent<RectTransform>();
-        focusScale = focusBarTransform.localScale;
-        armorBarTransform = armorBar.GetComponent<RectTransform>();
-        armorScale = armorBarTransform.localScale;
-        
+        if (focusBar != null && armorBar != null)
+        {
+            focusBarTransform = focusBar.GetComponent<RectTransform>();
+            focusScale = focusBarTransform.localScale;
+
+
+            armorBarTransform = armorBar.GetComponent<RectTransform>();
+            armorScale = armorBarTransform.localScale;
+        }
+
         startHealth = health;
         startFocus= focus;
         startArmor = armor;
